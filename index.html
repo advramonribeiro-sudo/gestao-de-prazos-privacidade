@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Gestão de Prazos - Trello</title>
+<style>
+  :root { --bg:#f7f8f9; --fg:#172b4d; --muted:#5e6c84; --card:#fff; --line:#dfe1e6; --accent:#0c66e4; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d2125; --fg:#dee4ea; --muted:#9fadbc; --card:#22272b; --line:#38414a; --accent:#579dff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 -apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:28px; line-height:1.25; margin:0 0 6px; }
+  h2 { font-size:19px; margin:34px 0 8px; }
+  .meta { color:var(--muted); font-size:14px; margin-bottom:28px; }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 20px; }
+  ul { padding-left:22px; } li { margin:4px 0; }
+  code { font-family:Consolas,monospace; font-size:14px; background:var(--card); border:1px solid var(--line); border-radius:4px; padding:1px 5px; word-break:break-all; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade</h1>
+  <div class="meta">Extensão para Chrome “Gestão de Prazos - Trello” · Última atualização: 9 de outubro de 2026</div>
+
+  <div class="box">
+    <strong>Resumo:</strong> a extensão funciona inteiramente no seu navegador. Ela não envia nenhum dado para o desenvolvedor, para servidores próprios ou para terceiros, não usa cookies de rastreamento nem ferramentas de análise, e não altera nada no Trello, na sua planilha ou no WhatsApp.
+  </div>
+
+  <h2>1. O que a extensão faz</h2>
+  <p>Mostra um painel com os prazos dos cards do Trello do usuário, cruzados com uma planilha de prazos fatais guardada no próprio computador; oferece um atalho para abrir a conversa do cliente no WhatsApp Web; e permite baixar os anexos dos cards (ZIP) e um relatório (CSV).</p>
+
+  <h2>2. Quais dados ela acessa e por quê</h2>
+  <ul>
+    <li><strong>Dados do Trello</strong> (nome, descrição, prazos, colunas, etiquetas, membros, comentários, anexos e histórico de atividade dos cards, e a lista de quadros do usuário): lidos diretamente do trello.com usando a sessão que o próprio usuário já tem aberta no navegador, apenas para montar o painel de prazos, o painel de produtividade, os botões de contato e os downloads que o usuário pede. A extensão só lê; nunca cria, edita ou apaga nada no Trello.</li>
+    <li><strong>Telefones na descrição dos cards</strong>: usados apenas para montar o link de conversa do WhatsApp e sugerir uma forma padronizada de escrevê-los (o usuário copia a sugestão se quiser; a extensão não grava nada).</li>
+    <li><strong>Planilha de prazos (arquivo .xlsx no computador)</strong>: lida, somente para leitura, a partir do arquivo que o próprio usuário escolhe nas configurações. Quando o arquivo é escolhido pela janela “Abrir” do sistema, a extensão percorre a lista de nomes das pastas do usuário apenas para descobrir onde esse mesmo arquivo está e guardar o caminho; o conteúdo de nenhum outro arquivo é aberto. A planilha nunca é alterada nem enviada a lugar nenhum.</li>
+  </ul>
+
+  <h2>3. WhatsApp</h2>
+  <p>O botão de WhatsApp apenas abre o link público de conversa do WhatsApp Web (<code>https://web.whatsapp.com/send?phone=…</code>) com o número do cliente. A extensão não lê, não envia, não armazena e não automatiza mensagens, e não acessa o conteúdo do WhatsApp.</p>
+
+  <p><strong>Diagnóstico de encaixe:</strong> o botão “Copiar diagnóstico de encaixe” do ícone da extensão copia para a área de transferência apenas a estrutura da página do Trello (tipos de elemento e tamanhos), sem textos, nomes ou telefones. Nada é enviado automaticamente; só vai para alguém se o próprio usuário colar.</p>
+
+  <h2>4. O que fica guardado no navegador</h2>
+  <p>Ficam guardados apenas no armazenamento local do Chrome, no computador do usuário: o caminho da planilha, a escolha de quais cards mostrar, os filtros e quadros escolhidos, uma cópia da última leitura do Trello (nome, prazos, colunas e último comentário dos cards e os telefones das descrições, para o painel abrir mais rápido), a planilha já processada, as etiquetas de destaque e os tipos de prazo configurados, as marcações de “resolvido”, os ajustes manuais de prazo e de tipo, as conferências de número de processo e a preferência de tema. Esses dados não saem do computador e são apagados ao remover a extensão.</p>
+
+  <h2>5. Compartilhamento</h2>
+  <p>Nenhum dado é vendido, compartilhado, transferido ou usado para publicidade, crédito ou qualquer finalidade diferente das funções descritas acima. O desenvolvedor não tem acesso a nenhum dado do usuário ou de seus clientes.</p>
+
+  <h2>6. Downloads</h2>
+  <p>Os arquivos ZIP e CSV são gerados no próprio navegador e salvos na pasta de downloads do usuário, somente quando ele pede.</p>
+
+  <h2>7. LGPD</h2>
+  <p>Como todo o tratamento acontece localmente no navegador de quem usa a extensão, o usuário (por exemplo, o escritório de advocacia) continua sendo o controlador dos dados de seus clientes, nos termos da Lei nº 13.709/2018. A extensão não cria nenhuma cópia desses dados fora do computador do usuário.</p>
+
+  <h2>8. Alterações e contato</h2>
+  <p>Se esta política mudar, a nova versão será publicada nesta mesma página, com a data atualizada. Dúvidas podem ser enviadas abrindo uma <a href="https://github.com/advramonribeiro-sudo/gestao-de-prazos-privacidade/issues">solicitação (issue) neste repositório</a>.</p>
+</main>
+</body>
+</html>
